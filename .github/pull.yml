@@ -1,5 +1,5 @@
 version: "1"
 rules:
   - base: master
-    upstream: simulationcraft:shadowlands
+    upstream: simulationcraft:dragonflight
     mergeMethod: rebase
