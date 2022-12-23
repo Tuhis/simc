@@ -82,7 +82,7 @@ COPY --from=build /app/SimulationCraft/profiles/ /app/SimulationCraft/profiles/
 # Install s3cmd
 RUN apk add --no-cache python3 py-pip py-setuptools git ca-certificates
 
-RUN pip install python-magic \
+RUN pip install python-magic six \
   && git clone https://github.com/s3tools/s3cmd.git /tmp/s3cmd \
   && cd /tmp/s3cmd \
   && python3 /tmp/s3cmd/setup.py install \
