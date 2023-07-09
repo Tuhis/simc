@@ -29,3 +29,4 @@ jobs:
         with:
           push: true
           tags: tuhis/simc:latest
+          build-args: THREADS=12
