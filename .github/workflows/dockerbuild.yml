@@ -10,7 +10,7 @@ jobs:
     runs-on:
       - self-hosted
       - kubernetes
-    container: ghcr.io/actions-runner-controller/actions-runner-controller/actions-runner:ubuntu-22.04
+    container: ubuntu:22.04
     steps:
       -
         name: Set up QEMU
