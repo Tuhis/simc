@@ -9,8 +9,7 @@ jobs:
   docker:
     runs-on:
       - self-hosted
-      - kubernetes
-    container: ghcr.io/actions-runner-controller/actions-runner-controller/actions-runner-dind-rootless:ubuntu-22.04
+      - ioio-k8s
     steps:
       -
         name: Set up QEMU
